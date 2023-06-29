@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day Night Theme</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <h2>D͢A͢R͢K͢ M͢O͢D͢E͢</h2>
+      <ul>
+        <li><a href="">HOME</a></li>
+        <li><a href="">ABOUT</a></li>
+        <li><a href="">PORTFOLIO</a></li>
+        <li><a href="">SERVICES</a></li>
+        <li><a href="">HIRE ME</a></li>
+        <li>
+          <button id="lightbutton"><i class="far fa-moon"></i></button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <h1>𝕎𝕖𝕝𝕔𝕠𝕞𝕖 𝕋𝕠 𝕄𝕪 𝕎𝕠𝕣𝕝𝕕</h1>
+      <p>
+        𝕷𝖔𝖗𝖊𝖒 𝖎𝖕𝖘𝖚𝖒 𝖉𝖔𝖑𝖔𝖗 𝖘𝖎𝖙 𝖆𝖒𝖊𝖙 𝖈𝖔𝖓𝖘𝖊𝖈𝖙𝖊𝖙𝖚𝖗 𝖆𝖉𝖎𝖕𝖎𝖘𝖎𝖈𝖎𝖓𝖌 𝖊𝖑𝖎𝖙. 𝕮𝖔𝖗𝖕𝖔𝖗𝖎𝖘
+        𝖈𝖔𝖒𝖒𝖔𝖉𝖎 𝖓𝖚𝖒𝖖𝖚𝖆𝖒 𝖗𝖊𝖕𝖊𝖑𝖑𝖆𝖙 𝖔𝖋𝖋𝖎𝖈𝖎𝖎𝖘 𝖉𝖔𝖑𝖔𝖗𝖊𝖒 𝖋𝖆𝖈𝖎𝖑𝖎𝖘 𝖖𝖚𝖎𝖘𝖖𝖚𝖆𝖒 𝖊𝖔𝖘 𝖓𝖔𝖘𝖙𝖗𝖚𝖒
+        𝖒𝖔𝖉𝖎 𝖑𝖆𝖇𝖔𝖗𝖎𝖔𝖘𝖆𝖒 𝖓𝖔𝖇𝖎𝖘 𝖙𝖊𝖓𝖊𝖙𝖚𝖗 𝖆𝖚𝖙𝖊𝖒 𝖓𝖎𝖘𝖎 𝖖𝖚𝖆𝖊 𝖆 𝖆𝖘𝖘𝖚𝖒𝖊𝖓𝖉𝖆, 𝖓𝖔𝖓 𝖆𝖕𝖊𝖗𝖎𝖆𝖒
+        𝖈𝖚𝖑𝖕𝖆?
+      </p>
+
+      <div class="buttonbox">
+        <button>Contact Us</button>
+        <button>Read More</button>
+      </div>
+    </div>
+
+    <script>
+
+        const body = document.querySelector('body');
+        const light = document.getElementById('lightbutton');
+
+        light.addEventListener('click', ()=>{
+            body.classList.toggle('dark');
+            if(light.innerHTML === '<i class="far fa-moon"></i>'){
+                light.innerHTML = '<i class="fas fa-sun"></i>'
+            }
+            else{
+                light.innerHTML = '<i class="far fa-moon"></i>'
+            }
+        })
+
+
+    </script>
+  </body>
+</html>
